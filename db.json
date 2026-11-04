@@ -1,0 +1,173 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "riddles": [
+    {
+      "id": 1,
+      "name": "Easy Math",
+      "taskDescription": "What is 5 + 3?",
+      "correctAnswer": "8",
+      "choices": [
+        "22",
+        "44",
+        "3",
+        "8"
+      ],
+      "level": "Easy",
+      "timeLimit": 7,
+      "hint": "the number is biger then 5"
+    },
+    {
+      "id": 2,
+      "name": "Easy Math",
+      "taskDescription": "What is 6 * 7?",
+      "correctAnswer": "42",
+      "choices": [
+        "2",
+        "42",
+        "9",
+        "2"
+      ],
+      "level": "Medium",
+      "timeLimit": 6,
+      "hint": "the number is biger then 15"
+    },
+    {
+      "id": 3,
+      "name": "Logic Puzzle",
+      "taskDescription": "How many months have 28 days?",
+      "correctAnswer": "12",
+      "choices": [
+        "12",
+        "47",
+        "9",
+        "1"
+      ],
+      "level": "Easy",
+      "timeLimit": 8,
+      "hint": "the number is biger then 9"
+    },
+    {
+      "id": 4,
+      "name": "Animal Riddle",
+      "taskDescription": "I have four legs and I bark. What am I?",
+      "correctAnswer": "dog",
+      "choices": [
+        "cat",
+        "lion",
+        "fish",
+        "dog"
+      ],
+      "level": "hard",
+      "timeLimit": 5,
+      "hint": "this is not a fish"
+    },
+    {
+      "id": 5,
+      "name": "Number Sequence",
+      "taskDescription": "What comes next: 2, 4, 6, 8, ?",
+      "correctAnswer": "10",
+      "choices": [
+        "22",
+        "10",
+        "3",
+        "2"
+      ],
+      "level": "hard",
+      "timeLimit": 5,
+      "hint": "the number is biger then 3"
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Yishai",
+      "lowestTime": 72
+    },
+    {
+      "id": 2,
+      "name": "Sarah",
+      "lowestTime": 65
+    },
+    {
+      "name": "miriam",
+      "lowestTime": null,
+      "id": 6
+    },
+    {
+      "name": "michal",
+      "lowestTime": 4462,
+      "id": 7
+    },
+    {
+      "name": "noa",
+      "lowestTime": null,
+      "id": 8
+    },
+    {
+      "name": "nnn",
+      "lowestTime": null,
+      "id": 9
+    },
+    {
+      "name": "meair",
+      "lowestTime": null,
+      "id": 10
+    },
+    {
+      "name": "",
+      "lowestTime": null,
+      "id": 11
+    },
+    {
+      "name": "noam",
+      "lowestTime": null,
+      "id": 12
+    },
+    {
+      "name": "nathan",
+      "lowestTime": null,
+      "id": 13
+    },
+    {
+      "name": "yisca",
+      "lowestTime": null,
+      "id": 14
+    },
+    {
+      "name": "m",
+      "lowestTime": null,
+      "id": 15
+    },
+    {
+      "name": "bar",
+      "lowestTime": null,
+      "id": 16
+    },
+    {
+      "name": "lidar",
+      "lowestTime": 6235,
+      "id": 17
+    },
+    {
+      "name": "linoi",
+      "lowestTime": 6188,
+      "id": 18
+    }
+  ]
+}

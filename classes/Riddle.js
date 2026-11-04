@@ -36,5 +36,5 @@ class Riddle {
     }
 
 }
-export default Riddle;
-
+// export default Riddle;
+export { Riddle };

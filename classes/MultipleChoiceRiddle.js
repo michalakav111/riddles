@@ -1,4 +1,4 @@
-import Riddle from "./Riddle.js";
+import {Riddle} from "./Riddle.js";
 import PromptSync from "prompt-sync";
 const prompt = PromptSync();
 class MultipleChoiceRiddle extends Riddle {

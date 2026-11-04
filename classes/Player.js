@@ -13,6 +13,7 @@ class Player {
     constructor(name) {
         this.name = name;
         this.times = [];
+        this.totalTime = 0;
     }
     recordTime(start, end) {
         this.times.push(end - start);
@@ -23,11 +24,11 @@ class Player {
         let avgTime = this.times.length > 0
             ? totalTime / this.times.length
             : 0;
-
+        this.totalTime = totalTime;
         console.log("Total time:", totalTime/1000);
         console.log("Average time:", avgTime/1000);
     }
 
 }
-export default Player;
+export { Player };
 
