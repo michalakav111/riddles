@@ -197,6 +197,7 @@ async function playGame() {
    
     const existingPlayer = await checkPlayerStatus(name);
     console.log("existingPlayer-check:", existingPlayer);
+    // יצירת שחקן חדש עם אותו השם בשביל לשמור את תוצאות המשחק ולהשוות
     const P1 = new Player(name);
 
     const level = prompt(
@@ -244,7 +245,7 @@ async function playGame() {
     }
 
     P1.showStats();
-    updatePlayerTime(existingPlayer, P1.totalTime);
+   await updatePlayerTime(existingPlayer, P1.totalTime);
     console.log("name",existingPlayer.name);
 
     console.log("existingPlayer:", existingPlayer);
@@ -255,14 +256,15 @@ async function playGame() {
 // עדכון הזמן
 
 async function updatePlayerTime(player, lowestTime) {
-    
+    // let playerf = await playersApi.findPlayerByName(player.name);
+// אם הוא קיים כבר ורק צריך לעכן זמן 
     if (player) {
         if (player.lowestTime == null ||
             lowestTime < player.lowestTime ) {
             console.log("New record time saved!");
 
             player.lowestTime = lowestTime;
-            console.log("player.:",typeof player);
+            console.log("player from UPDATE .:", player);
 
             
             // const player = new Player(existingPlayer.name);
@@ -271,9 +273,13 @@ async function updatePlayerTime(player, lowestTime) {
             await playersApi.updatePlayer(player);
         }
         else{
+
             console.log("You did not beat your previous record time of ", player.lowestTime, "seconds.  ");
         }
 
+        }
+        else{
+            console.log('hear');
         }
     }
 

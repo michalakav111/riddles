@@ -2,12 +2,13 @@
   "name": "riddle-game",
   "version": "1.0.0",
   "type": "module",
-  
   "dependencies": {
-    "json-server": "^0.17.4",
+    "express": "^5.3.0",
     "prompt-sync": "^4.2.0"
+    },
+  "scripts": {
+    "server": "node server/server.js",
+    "start": "node client/app.js"
+
   }
-  ,"scripts": {
-  "server": "json-server --watch db.json --port 3000"
-}
 }

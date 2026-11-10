@@ -3,7 +3,7 @@
 
  export async function getAllPlayers() {
     try {
-        const response = await fetch("http://localhost:3000/players");
+        const response = await fetch("http://localhost:3000/api/players");
         return await response.json();
     } catch (error) {
         console.error("Error fetching all players:", error);
@@ -47,7 +47,7 @@ export async function findPlayerByName(name) {
     try {
         const cleanName = name.trim();
 
-        const url = `http://localhost:3000/players?name=${encodeURIComponent(cleanName)}`;
+        const url = `http://localhost:3000/api/players?name=${encodeURIComponent(cleanName)}`;
 
         console.log("Searching URL:", url);
 
@@ -77,7 +77,7 @@ export async function findPlayerByName(name) {
 // createPlayer(name) - adds a new player with lowestTime: null
 export async function createPlayer(name) {
     try {
-        const response = await fetch("http://localhost:3000/players", {
+        const response = await fetch("http://localhost:3000/api/players", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -95,7 +95,7 @@ export async function createPlayer(name) {
 // מקבלת שחקן 
  export async function updatePlayer(player) {
     try {
-        const response = await fetch(`http://localhost:3000/players/${player.id}`, {
+        const response = await fetch(`http://localhost:3000/api/players/${player.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
